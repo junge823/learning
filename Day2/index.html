@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="results.html" method="GET">
+    <div>
+        <label for="username">Username:</label>
+        <input type="text" id="name" name="username" placeholder="Username" required>
+
+    </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+        
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="200"  required>
+        </div>
+
+
+        <div>
+            <label for="date">Birthday:</label>
+            <input type="date" id="date" name="date" required>
+
+        </div>
+        Favorite Food:
+
+        <div>
+            <label for="Banana">Banana</label>
+            <input type="checkbox" id="Banana" name="Banana" value="#0000ff" >
+        </div>
+
+        <div>
+            <label for="Mango">Mango</label>
+            <input type="checkbox" id="Mango" name="Mango" value="#0000ff" >
+        </div>
+
+        <div>
+            <label for="Apple">Apple</label>
+            <input type="checkbox" id="Apple" name="Apple" value="#0000ff" >
+        </div>
+
+        Gender:
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+        </div>
+
+        <div>
+            <label for="EyeColor">Eye Color:</label>
+            <select id="EyeColor" name="EyeColor" required>
+                <option value="Black">Black</option>
+                <option value="Blue">Blue</option>
+                <option value="Brown">Brown</option>
+                <option value="Green">Green</option>
+                <option value="Gray">Gray</option>
+            </select>
+        </div>
+
+        <div>
+        <label for="bio">Bio:</label>
+        <textarea id="bio" name="bio">My name is Aabhash Jung Budhathoki</textarea>
+        </div>
+        <input type="hidden" name="hidden" value="Hello">
+
+        <div>
+            <label for="file">Upload File:</label>
+            <input type="file" id="file" name="file" required>
+        </div>
+
+        <div>
+            <label for="ContactNumber">Contact Number:</label>
+            <input type="tel" id="ContactNumber" name="ContactNumber" placeholder="Contact Number" required>
+        </div>
+
+        <div>
+            <label for="url">Website URL:</label>
+            <input type="url" id="url" name="url" placeholder="https://example.com">
+        </div>  
+
+        <div>
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" name="color" value="#ff0000" required>
+        </div>
+
+
+        <div>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Location" required>
+        </div>
+
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+    </div>
+
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+
+
+
+    </form>
+
+</body>
+</html>
