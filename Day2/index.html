@@ -6,7 +6,7 @@
     <title>Form</title>
 </head>
 <body>
-    <form action="results.html" method="GET">
+    <form >
     <div>
         <label for="username">Username:</label>
         <input type="text" id="name" name="username" placeholder="Username" required>
@@ -19,7 +19,7 @@
         
         <div>
             <label for="age">Age:</label>
-            <input type="number" id="age" name="age" min="1" max="200"  required>
+            <input type="number" id="age" name="age" min="1" max="200" value="34" required>
         </div>
 
 
@@ -32,17 +32,17 @@
 
         <div>
             <label for="Banana">Banana</label>
-            <input type="checkbox" id="Banana" name="Banana" value="#0000ff" >
+            <input type="checkbox" id="Banana" name="Banana" value="banana" >
         </div>
 
         <div>
             <label for="Mango">Mango</label>
-            <input type="checkbox" id="Mango" name="Mango" value="#0000ff" >
+            <input type="checkbox" id="Mango" name="Mango" value="mango" >
         </div>
 
         <div>
             <label for="Apple">Apple</label>
-            <input type="checkbox" id="Apple" name="Apple" value="#0000ff" >
+            <input type="checkbox" id="Apple" name="Apple" value="apple" >
         </div>
 
         Gender:
@@ -61,7 +61,7 @@
                 <option value="Blue">Blue</option>
                 <option value="Brown">Brown</option>
                 <option value="Green">Green</option>
-                <option value="Gray">Gray</option>
+                <option value="ray">Gray</option>
             </select>
         </div>
 
@@ -69,11 +69,18 @@
         <label for="bio">Bio:</label>
         <textarea id="bio" name="bio">My name is Aabhash Jung Budhathoki</textarea>
         </div>
+        <!-- ???? -->
         <input type="hidden" name="hidden" value="Hello">
 
         <div>
             <label for="file">Upload File:</label>
             <input type="file" id="file" name="file" required>
+            <input type="file" id="file" style="display:none;" required>
+            <input type="week" value="2024-W25" />
+
+<!-- Custom button -->
+<button type="button" id="customBtn">Upload File</button>
+<span id="fileName">No file chosen</span> 
         </div>
 
         <div>
