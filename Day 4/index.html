@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Portfolio | Web Developer</title>
+  <meta name="description" content="Personal portfolio of a web developer. Explore my skills, projects, and contact me.">
+  <meta name="keywords" content="Portfolio, Web Developer, HTML, CSS, JavaScript, Projects">
+  <meta name="author" content="Your Name">
+
+  <!-- Link External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Fixed Header -->
+  <header>
+    <h1>My Portfolio</h1>
+    <nav class="flex-nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Page Layout -->
+  <div class="container">
+    <!-- Sidebar -->
+    <aside>
+      <h2>Sidebar</h2>
+      <ul>
+        <li><a href="#">HTML Projects</a></li>
+        <li><a href="#">CSS Designs</a></li>
+        <li><a href="#">JavaScript Apps</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I’m a passionate web developer learning HTML5, CSS, and JavaScript. I enjoy building modern, accessible, and user-friendly websites.</p>
+      </section>
+
+      <!-- Responsive Cards Section -->
+      <section id="projects">
+        <h2>My Projects</h2>
+        <div class="card-container">
+          <div class="card">
+            <h3>Project One</h3>
+            <p>A responsive landing page designed using HTML and CSS Flexbox.</p>
+          </div>
+          <div class="card">
+            <h3>Project Two</h3>
+            <p>A JavaScript app that fetches live weather data using an API.</p>
+          </div>
+          <div class="card">
+            <h3>Project Three</h3>
+            <p>A portfolio website demonstrating responsive layout and interactivity.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="results.html" method="POST">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio | Built with ❤️ in HTML5 & CSS Flexbox</p>
+  </footer>
+</body>
+</html>
