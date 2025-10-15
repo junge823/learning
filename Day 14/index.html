@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Filter by Price</title>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Product Filter by Price</h1>
+
+  <div class="container">
+    <label for="priceLimit"><strong>Enter a maximum price:</strong></label>
+    <input type="number" id="priceLimit" placeholder="e.g., 500">
+    <button onclick="filterProducts()">Filter Products</button>
+
+    <div id="productList" class="product-list"></div>
+  </div>
+
+  <!-- Link JS -->
+  <script src="script.js"></script>
+</body>
+</html>
