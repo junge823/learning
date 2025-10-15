@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Number Checker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f4f6f8;
+      color: #333;
+      
+    }
+    h1 {
+      text-align: center;
+      color: #0077b6;
+    }
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    }
+    input[type="number"] {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0 1rem 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    button {
+      padding: 0.5rem 1rem;
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    button:hover {
+      background-color: #005f87;
+    }
+    .result, .primes {
+      margin-top: 1rem;
+      padding: 0.5rem;
+      background-color: #e0f7fa;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Prime Number Checker</h1>
+
+  <div class="container">
+    <label for="number">Enter a number:</label>
+    <input type="number" id="number" placeholder="e.g., 17">
+
+    <button onclick="checkPrime()">Check if Prime</button>
+
+    <div class="result" id="result"></div>
+
+    <button onclick="displayFirst10Primes()">Show First 10 Prime Numbers</button>
+    <div class="primes" id="primes"></div>
+  </div>
+
+  <script>
+    // Function to check if a number is prime
+    function isPrime(num) {
+      if (num < 2) return false;
+      for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+      }
+      return true;
+    }
+
+    // Function to check user input
+    function checkPrime() {
+      const num = parseInt(document.getElementById('number').value);
+      const resultDiv = document.getElementById('result');
+
+      if (isNaN(num)) {
+        resultDiv.textContent = "Please enter a valid number.";
+        return;
+      }
+
+      if (isPrime(num)) {
+        resultDiv.textContent = `${num} is a prime number.`;
+      } else {
+        resultDiv.textContent = `${num} is NOT a prime number.`;
+      }
+    }
+
+    // Function to get first N prime numbers
+    function firstNPrimes(n) {
+      const primes = [];
+      let num = 2;
+      while (primes.length < n) {
+        if (isPrime(num)) primes.push(num);
+        num++;
+      }
+      return primes;
+    }
+
+    // Display first 10 primes
+    function displayFirst10Primes() {
+      const primesDiv = document.getElementById('primes');
+      const primes = firstNPrimes(10);
+      primesDiv.textContent = `First 10 prime numbers: ${primes.join(', ')}`;
+    }
+  </script>
+
+</body>
+</html>
