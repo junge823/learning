@@ -110,3 +110,14 @@ aside {
   padding: 4rem 2rem;
   margin-bottom: 3rem;
 }
+/* Fade-in effect triggered by JS */
+.fade-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: opacity 1s ease-in, transform 1s ease-in;
+}
+
+.animate-fade {
+  opacity: 0;
+  transform: translateY(30px);
+}
