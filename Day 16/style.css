@@ -1,0 +1,62 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  text-align: center;
+  padding-top: 100px;
+}
+
+form {
+  background: white;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 20px 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+input {
+  padding: 10px;
+  width: 250px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 10px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #0077b6;
+  outline: none;
+}
+
+button {
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #005f87;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/*  Valid &  Invalid backgrounds */
+input.valid {
+  background-color: #d4edda; /* light green */
+  border-color: #28a745;
+}
+
+input.invalid {
+  background-color: #f8d7da; /* light red */
+  border-color: #dc3545;
+}
