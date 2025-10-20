@@ -1,0 +1,71 @@
+:root {
+  --bg: #f8f9fa;
+  --card: #ffffff;
+  --primary: #0077b6;
+  --muted: #6c757d;
+  --shadow: 0 4px 10px rgba(0,0,0,0.08);
+  --radius: 10px;
+  
+}
+
+
+
+body {
+  background: var(--bg);
+  font-family: "Segoe UI", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  color: #222;
+}
+
+.app {
+  max-width: 800px;
+  width: 100%;
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  color: var(--primary);
+}
+
+p {
+  color: var(--muted);
+}
+
+.posts {
+  display: grid;
+  gap: 1rem;
+}
+
+.post {
+  border: 1px solid #eaeaea;
+  border-radius: var(--radius);
+  padding: 1rem;
+  background: #fff;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease;
+}
+
+.post:hover {
+  transform: scale(1.02);
+}
+
+.post h3 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--muted);
+}
